@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sushi Website</title>
+    <link rel="stylesheet" href="./output.css" />
+
+    <!-- Fontawesome Libary -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="bg-[#EEDF7A] text-[#343131]">
+      <nav class="mb-8 mx-8 py-4 flex items-center justify-between">
+        <div class="logo flex items-center justify-center space-x-0">
+          <span
+            class="bg-green-500 text-white font-medium font-Afacad text-[36px] rounded-lg w-8 h-8 flex items-center justify-center"
+          >
+            S
+          </span>
+          <span class="text-black text-2xl font-semibold text-[32px]"
+            >ushi</span
+          >
+        </div>
+        <div
+          class="dropdown-menu bg-[#EEDF7A] text-[#343131] md:text-base lg:text-xl md:font-Inter lg:font-Afacad absolute md:static right-4 -top-full"
+        >
+          <ul
+            class="border-red-600 flex flex-col items-center gap-y-4 p-4 md:gap-x-3 lg:gap-x-6 md:lg:py-2 md:flex-row md:justify-around"
+          >
+            <li>Home</li>
+            <li>
+              Menu
+              <span class="md:ml-2"
+                ><i class="fa-solid fa-angle-down"></i
+              ></span>
+            </li>
+            <li>About Us</li>
+            <li class="border-red-600">
+              Service
+              <span class="md:ml-2"
+                ><i class="fa-solid fa-angle-down"></i
+              ></span>
+            </li>
+            <li>Offers</li>
+          </ul>
+        </div>
+        <div class="icons border-green-600 flex justify-end">
+          <ul class="flex items-center justify-end">
+            <li class="mx-2"><i class="fa-solid fa-magnifying-glass"></i></li>
+            <li class="mx-2"><i class="fa-solid fa-cart-shopping"></i></li>
+            <li class="toggle-btn mx-2 md:hidden">
+              <i class="fa-solid fa-bars fa-xl"></i>
+            </li>
+            <li class="contact ml-2 mini:hidden md:inline-block">
+              <button
+                class="text-white bg-green-700 rounded-full px-4 py-2 flex items-center justify-center"
+              >
+                <i class="fa-solid fa-phone-volume fa-lg mr-2"></i>
+                Contact
+              </button>
+            </li>
+          </ul>
+        </div>
+        <!-- <div class="toggle-btn border-2 flex items-center justify-center">
+          <i class="fa-solid fa-bars fa-xl"></i>
+        </div> -->
+        <!-- <div class="contact mini:hidden md:lg:inline-block">
+          <button
+            class="text-white bg-green-700 rounded-full px-4 py-2 flex items-center justify-center"
+          >
+            <i class="fa-solid fa-phone-volume fa-lg mr-2"></i>
+            Contact
+          </button>
+        </div> -->
+      </nav>
+    </header>
+
+    <!-- ====== Navbar Section End -->
+
+    <!-- Hero Section starts  -->
+    <div class="border-red-600 mx-8 my-8 md:flex md:items-center">
+      <div
+        class="left_content border-yellow-600 my-4 md:flex md:flex-col md:items-start"
+      >
+        <h1 class="text-4xl font-bold mx-8 py-4 md:w-[22rem]">
+          Sushi Bliss, Every Roll a Flavourful
+          <span class="text-green-600"> Kiss</span>
+        </h1>
+        <p class="mx-8 text-lg">
+          Masters of Maki: Elevate Your Taste Buds with Our Sushi Creations,
+          Where Tradition Meets Innovation!
+        </p>
+        <div class="buttons mx-8 my-4 flex">
+          <button class="text-white bg-green-700 rounded-full px-4 py-2 mx-2">
+            Order Now
+          </button>
+          <div class="mx-2">
+            Watch Video
+            <button
+              class="border rounded-full bg-white shadow-lg px-3 py-2 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300"
+            >
+              <i class="fa-solid fa-play"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- mr-4 -->
+      <div
+        class="hero_img w-full md:my-3 py-4 border-cyan-700 md:flex md:items-center md:justify-center"
+      >
+        <img
+          src="../assets/Hero_Section.png"
+          class="md:h-[18rem] lg:h-[22rem] border-lime-500"
+          alt=""
+        />
+      </div>
+    </div>
+    <!-- Hero Section Ends  -->
+
+    <!-- Categories Section Starts  -->
+    <div class="categories mx-4 my-8">
+      <div class="titles flex flex-col items-center">
+        <h3 class="my-2 text-[#f05252] font-Inter font-bold tracking-wider">
+          CUSTOMER FAVORITES
+        </h3>
+        <p class="my-2 font-Inter font-semibold text-4xl">Popular Categories</p>
+      </div>
+
+      <!--  -->
+      <div
+        class="cards flex flex-col items-center lg:justify-evenly md:flex-row md:flex-wrap md:justify-evenly border-rose-600 mx-4 my-8 space-y-8 md:space-x-2 lg:space-y-0"
+      >
+        <div
+          class="main_dish border border-lime-600 py-5 px-12 shadow-custom-2 rounded-2xl flex flex-col items-center"
+        >
+          <div class="mb-4">
+            <img
+              src="../assets/Main_Dish.png"
+              class="bg-[#C1F1C6] h-48 w-48 md:h-36 md:w-40 lg:h-40 lg:w-40 rounded-full"
+              alt="Main Dish"
+            />
+          </div>
+
+          <div class="desc">
+            <h4 class="font-Inter font-semibold text-xl text-[#1E1E1E]">
+              Main Dish
+            </h4>
+            <span class="font-Inter text-lg text-[#555555]"> (86 dishes) </span>
+          </div>
+        </div>
+        <div
+          class="break_fast border border-lime-600 py-5 px-12 shadow-custom-2 rounded-2xl flex flex-col items-center"
+        >
+          <div class="mb-4">
+            <img
+              src="../assets/Breakfast.png"
+              class="bg-[#C1F1C6] h-48 w-48 md:h-36 md:w-36 lg:h-40 lg:w-40 rounded-full"
+              alt="Breakfast"
+            />
+          </div>
+          <div class="desc md:-mt-1">
+            <h4 class="font-Inter font-semibold text-xl text-[#1E1E1E]">
+              Break Fast
+            </h4>
+            <span class="font-Inter text-lg text-[#555555]">
+              (12 break fast)
+            </span>
+          </div>
+        </div>
+        <div
+          class="sushi_combo border border-lime-600 py-5 px-12 shadow-shadow-mdl1 rounded-2xl flex flex-col items-center"
+        >
+          <!-- md:h-28 md:w-28 -->
+          <div class="mb-4">
+            <img
+              src="../assets/Sushi_Combo.png"
+              class="bg-[#C1F1C6] h-48 w-48 md:h-36 md:w-36 lg:h-40 lg:w-40 p-3 rounded-full"
+              alt="Sushi Combo"
+            />
+          </div>
+          <div class="desc -mb-1">
+            <h4 class="font-Inter font-semibold text-xl text-[#1E1E1E]">
+              Sushi Combo
+            </h4>
+            <span class="font-Inter text-lg text-[#555555]">
+              (Combo of 6)
+            </span>
+          </div>
+        </div>
+        <div
+          class="browse_all border py-5 px-12 shadow-shadow-mdl1 rounded-2xl flex flex-col items-center border-lime-600"
+        >
+          <!-- md:h-24 md:w-28 -->
+          <div class="mb-4">
+            <img
+              src="../assets/Other_Dishes.png"
+              class="bg-[#C1F1C6] h-48 w-48 p-3 md:h-36 md:w-36 lg:h-40 lg:w-40 rounded-full border-amber-600"
+              alt="Other Dishes"
+            />
+          </div>
+          <div class="desc">
+            <h4 class="font-Inter font-semibold text-xl text-[#1E1E1E]">
+              Browse All
+            </h4>
+            <span class="font-Inter text-lg text-[#555555]"> (255 Items) </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Categories Section Ends  -->
+
+    <!-- Special Dish Section starts -->
+    <div class="special_dish mx-8 my-8">
+      <p
+        class="my-2 text-[#f05252] font-Inter font-bold tracking-wider flex justify-center"
+      >
+        SPECIAL DISHES
+      </p>
+      <div
+        class="flex border-amber-700 items-center md:justify-between lg:justify-between lg:mx-10 mb-8"
+      >
+        <p class="my-2 font-Inter font-semibold text-2xl md:text-4xl md:w-72">
+          Best Dishes From Our Menu
+        </p>
+        <div class="left_right_move flex items-center justify-between">
+          <button
+            class="border rounded-full bg-slate-400 flex items-center justify-center py-2 px-3 h-8 w-8 md:h-11 md:w-11"
+          >
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button
+            class="border rounded-full bg-green-500 flex items-center justify-center text-white py-2 px-3 h-8 w-8 md:h-11 md:w-11"
+          >
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+      <div
+        class="cards flex flex-col md:flex-row items-center justify-around space-y-8 md:space-x-6 md:space-y-0 lg:-space-x-10"
+      >
+        <div class="card1 border border-green-500 rounded-3xl px-4">
+          <div class="fav_btn text-right -mb-8">
+            <button
+              class="border bg-[#39db4a] px-5 py-3 rounded-tr-[20px] rounded-bl-[20px] translate-x-7 -translate-y-4"
+            >
+              <i class="fa-regular fa-heart"></i>
+            </button>
+          </div>
+          <div
+            class="menu_pic flex items-center justify-center border-amber-800"
+          >
+            <img
+              src="../assets/Best_Sushi_Salad.png"
+              class="w-64 h-64 md:lg:w-60 md:lg:h-56 -mb-6"
+              alt=" Best Sushi Salad"
+            />
+          </div>
+          <div class="menu_desc my-2 mx-2">
+            <h3
+              class="font-Afacad font-extrabold text-2xl md:lg:text-xl text-[#1E1E1E]"
+            >
+              Best Sushi Salad
+            </h3>
+            <p class="text-[#737373] text-base font-bold font-Afacad">
+              Everylasting feel in taste bud
+            </p>
+          </div>
+          <div
+            class="price_rating flex items-center justify-between px-2 mb-3 font-Afacad"
+          >
+            <p><span class="text-pink-600 font-bold text-sm">$</span>10.00</p>
+            <p>
+              <span class="text-yellow-400"
+                ><i class="fa-solid fa-star"></i> </span
+              >4.9
+            </p>
+          </div>
+        </div>
+        <div class="card2 border border-green-500 rounded-3xl px-4">
+          <div class="fav_btn text-right -mb-8">
+            <button
+              class="border bg-[#39db4a] px-5 py-3 rounded-tr-[20px] rounded-bl-[20px] translate-x-5 -translate-y-1"
+            >
+              <i class="fa-regular fa-heart"></i>
+            </button>
+          </div>
+          <div
+            class="menu_pic flex items-center justify-center border-amber-800"
+          >
+            <img
+              src="../assets/Zen_Sashimi_Salad.png"
+              class="w-64 h-64 md:lg:w-60 md:lg:h-60 -mb-8"
+              alt="Zen Sashimi Salad"
+            />
+          </div>
+          <div class="menu_desc my-2 mx-2">
+            <h3
+              class="font-Afacad font-semibold text-2xl md:lg:text-xl text-[#1E1E1E]"
+            >
+              Zen Zest Sashimi Salad
+            </h3>
+            <p class="text-[#737373] text-base font-bold font-Afacad">
+              the Most spicy salad in town
+            </p>
+          </div>
+          <div
+            class="price_rating flex items-center justify-between px-2 mb-3 font-Afacad"
+          >
+            <p><span class="text-pink-600 font-bold text-sm">$</span>10.00</p>
+            <p>
+              <span class="text-yellow-400"
+                ><i class="fa-solid fa-star"></i> </span
+              >4.9
+            </p>
+          </div>
+        </div>
+        <div class="card3 border border-green-500 rounded-3xl px-4">
+          <div class="fav_btn text-right -mb-8">
+            <button
+              class="border bg-[#39db4a] px-5 py-3 rounded-tr-[20px] rounded-bl-[20px] translate-x-5 -translate-y-1"
+            >
+              <i class="fa-regular fa-heart"></i>
+            </button>
+          </div>
+          <div
+            class="menu_pic flex items-center justify-center border-amber-800"
+          >
+            <img
+              src="../assets/Seaside_Sushi_Salad.png"
+              class="w-64 h-60 md:lg:w-56 md:lg:h-52 -mb-4"
+              alt="Seaside Sushi Salad "
+            />
+          </div>
+          <div class="menu_desc my-2 mx-2">
+            <h3
+              class="font-Afacad font-semibold text-2xl md:lg:text-xl text-[#1E1E1E]"
+            >
+              Seaside Sushi Salad
+            </h3>
+            <p class="text-[#737373] text-base font-bold font-Afacad">
+              Every piece feel the ocean
+            </p>
+          </div>
+          <div
+            class="price_rating flex items-center justify-between px-2 mb-3 font-Afacad"
+          >
+            <p><span class="text-pink-600 font-bold text-sm">$</span>10.00</p>
+            <p>
+              <span class="text-yellow-400"
+                ><i class="fa-solid fa-star"></i> </span
+              >4.9
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Special Dish Section Ends  -->
+
+    <!-- Testimonials Section Starts -->
+    <div
+      class="testimonials flex flex-col md:flex-row items-center justify-evenly mx-8 my-8"
+    >
+      <div class="left_section best_chef_img mx-8 border-red-900">
+        <img
+          src="../assets/Chef.png"
+          class="h-[23rem]"
+          alt="Best Chef in Town"
+        />
+      </div>
+      <div
+        class="right_section content_testimonial mx-8 md:w-1/2 border-blue-900"
+      >
+        <div
+          class="my-4 text-[#f05252] font-Inter font-bold tracking-wider flex justify-center"
+        >
+          TESTIMONIALS
+        </div>
+        <p class="my-4 font-Inter font-semibold text-3xl md:w-80">
+          What Our Customers Says About Us
+        </p>
+        <p
+          class="text-[18px] font-Afacad font-medium md:w-[87%] mb-4 text-[#737373]"
+        >
+          "I had the pleasure of dining at Foodi last night, and I am still
+          raving about the experience! The attention to detail in presentation
+          and service was impeccable."
+        </p>
+        <div
+          class="review_rating flex flex-col space-y-4 items-center md:flex-row md:justify-between md:mr-"
+        >
+          <div class="cust_pics">
+            <div>
+              <div class="flex items-center space-x-2 text-base">
+                <h4 class="font-semibold text-slate-900">Contributors</h4>
+                <span
+                  class="rounded-full bg-slate-100 px-2 py-1 text-xs font-semibold text-slate-700"
+                  >204</span
+                >
+              </div>
+              <div class="mt-3 flex -space-x-2 overflow-hidden">
+                <img
+                  class="inline-block h-12 w-12 rounded-full ring-2 ring-white"
+                  src="../assets/Pink_person_cropped.png"
+                  alt=""
+                />
+                <img
+                  class="inline-block h-12 w-12 rounded-full ring-2 ring-white"
+                  src="../assets/Yellow_person_crop.png"
+                  alt=""
+                />
+                <img
+                  class="inline-block h-12 w-12 rounded-full ring-2 ring-white"
+                  src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
+                  alt=""
+                />
+                <img
+                  class="inline-block h-12 w-12 rounded-full ring-2 ring-white md:hidden"
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="feedback my-4">
+            <p
+              class="font-Inter font-semibold text-lg md:text-base md:text-center"
+            >
+              Customer Feedback
+            </p>
+            <p
+              class="font-Inter font-semibold text-sm md:text-xs md:text-center md:ml-2 text-[#737373]"
+            >
+              <span class="text-yellow-400"
+                ><i class="fa-solid fa-star"></i> </span
+              >4.9
+              <span class>(18.6k Reviews) </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonials Section Ends -->
+
+    <!-- Story Service Section Starts -->
+    <!-- md:flex md:items-center -->
+    <div
+      class="story_service_sec grid grid-cols-1 my-8 mx-8 lg:my-12 md:gap-x-1 md:grid-cols-2"
+    >
+      <div class="left_content explanation mb-4">
+        <h2 class="my-4 text-[#f05252] font-Inter font-bold tracking-wider">
+          OUR STORY & SERVICES
+        </h2>
+        <div class="my-4 font-Inter font-semibold text-3xl md:w-80">
+          Our Culinary Journey And Services
+        </div>
+        <p
+          class="text-[18px] font-Afacad font-medium md:w-[87%] mb-4 text-[#737373]"
+        >
+          Rooted in passion, we curate unforgettable dining experiences and
+          offer exceptional services, blending culinary artistry and warm
+          hospitality.
+        </p>
+        <button class="text-white bg-green-500 rounded-full px-6 py-3 my-4">
+          Explore
+        </button>
+      </div>
+      <div
+        class="right_content cards grid grid-cols-1 gap-y-8 md:grid-cols-2 md:gap-x-6 md:gap-y-4 lg:gap-x-6 lg:gap-y-6"
+      >
+        <div
+          class="card shadow-all4sdw flex flex-col items-center justify-between px-4 md:w-44 lg:w-52 rounded-3xl"
+        >
+          <img src="../assets/fruit_bowl.png" class="mt-2 h-20 w-20" alt="" />
+          <div class="mt-4 text-[#39db4a] text-lg font-semibold font-Inter">
+            CATERING
+          </div>
+          <p class="text-center my-2 text-[#90BD95] text-base font-medium">
+            Delight your guests with our flavours and presentation
+          </p>
+        </div>
+
+        <!-- md:-ml-12 -->
+        <div
+          class="card shadow-all4sdw flex flex-col items-center justify-center px-4 md:w-44 lg:w-52 rounded-3xl"
+        >
+          <img src="../assets/Fast_Delivery.png" class="h-24 w-24" alt="" />
+          <div class="mt-2 text-[#39db4a] text-lg font-semibold font-Inter">
+            FAST DELIVERY
+          </div>
+          <p class="text-center my-2 text-[#90BD95] text-base font-medium">
+            We deliver your order promptly to your door.
+          </p>
+        </div>
+        <div
+          class="card shadow-all4sdw flex flex-col items-center justify-center px-4 md:w-44 lg:w-52 rounded-3xl"
+        >
+          <img
+            src="../assets/Online_Ordering.png"
+            class="mt-2 h-16 w-16"
+            alt=""
+          />
+          <div
+            class="mt-4 text-[#39db4a] text-lg font-semibold font-Inter md:text-center"
+          >
+            ONLINE ORDERING
+          </div>
+          <p class="text-center my-2 text-[#90BD95] text-base font-medium">
+            Explore menu & order with ease using our online ordering
+          </p>
+        </div>
+
+        <!-- md:-ml-12 -->
+        <div
+          class="card shadow-all4sdw flex flex-col items-center justify-center px-4 md:w-44 lg:w-52 rounded-3xl"
+        >
+          <img src="../assets/Gift_Cards.png" class="mt-2 h-16 w-16" alt="" />
+          <div class="mt-4 text-[#39db4a] text-lg font-semibold font-Inter">
+            GIFT CARDS
+          </div>
+          <p class="text-center my-2 text-[#90BD95] text-base font-medium">
+            Give the gift of exceptional dining with Foodi Gift Cards
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Story Service Section Ends -->
+
+    <!-- Footer Section Starts -->
+    <footer>
+      <div
+        class="main_footer_container md:grid md:grid-cols-4 md:gap-x-4 md:mx-8 my-8"
+      >
+        <div class="firstcol logo_expl md:w-2/3 ml-4 border-red-700">
+          <div class="logo flex items-center space-x-0 pb-4">
+            <span
+              class="bg-green-500 text-white font-medium font-Afacad text-[36px] rounded-lg w-8 h-8 flex items-center justify-center"
+            >
+              S
+            </span>
+            <span class="text-black text-2xl font-semibold text-[32px]"
+              >ushi</span
+            >
+          </div>
+          <p class="md:w-52 text-[#525252] font-medium font-Inter">
+            Savour the artistry where every dish is a culinary masterpiece
+          </p>
+        </div>
+        <div class="second_col useful_links border-red-700 md:ml-4">
+          <p
+            class="font-bold font-Inter text-lg tracking-wide mb-2 flex items-center justify-center"
+          >
+            Useful Links
+          </p>
+          <ul
+            class="space-y-2 flex flex-col items-center justify-center text-[#525252] font-medium font-Inter tracking-wider"
+          >
+            <li>About Us</li>
+            <li>Events</li>
+            <li>Blogs</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+        <div class="third_col main_menu border-red-700 mt-4 md:mt-0 md:mx-8">
+          <p
+            class="font-bold font-Inter text-lg tracking-wide mb-2 flex items-center md:justify-start justify-center"
+          >
+            Main Menu
+          </p>
+          <ul
+            class="space-y-2 flex flex-col items-center md:items-start justify-center text-[#525252] font-medium font-Inter tracking-wider"
+          >
+            <li>Home</li>
+            <li>Offers</li>
+            <li>Menus</li>
+            <li>Reservation</li>
+          </ul>
+        </div>
+        <div
+          class="fourth_col contact_us flex flex-col items-center justify-center text-[#525252] font-medium font-Inter mt-4 md:my-0 border-red-700"
+        >
+          <p class="font-bold font-Inter text-black text-lg tracking-wide mb-2">
+            Contact Us
+          </p>
+          <div class="mb-2">support@gmail.com</div>
+          <div class="mb-2">+64 958 248 9660</div>
+          <ul
+            class="flex items-center justify-between space-x-2 my-4 w-80 md:w-40 border-red-600"
+          >
+            <li
+              class="bg-[#C2FFC7] text-[#62825D] border-[3px] border-spacing-2 border-[#898121] rounded-full px-3 py-1"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </li>
+            <li
+              class="bg-[#C2FFC7] text-[#62825D] border-[3px] border-spacing-2 border-[#898121] rounded-full px-2 py-1"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </li>
+            <li
+              class="bg-[#C2FFC7] text-[#62825D] border-[3px] border-spacing-2 border-[#898121] rounded-full px-2 py-1"
+            >
+              <i class="fa-brands fa-twitter"></i>
+            </li>
+            <li
+              class="bg-[#C2FFC7] text-[#62825D] border-[3px] border-spacing-2 border-[#898121] rounded-full px-2 py-1"
+            >
+              <i class="fa-brands fa-youtube"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="copyright flex items-center justify-center py-4 mt-4 text-white bg-gray-800"
+      >
+        Copyright &copy; 2023 Dscode | All rights reserved
+      </div>
+    </footer>
+    <!-- Footer Section Ends -->
+
+    <script src="./script.js"></script>
+  </body>
+</html>

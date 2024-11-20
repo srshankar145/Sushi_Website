@@ -1,0 +1,158 @@
+npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+
+Color Combinations:
+
+Nav Menu
+green: #39db4a
+Font family: Inter
+
+
+Hero section 
+Title 
+Font family: Afacad
+font size: 48px
+font weight:700
+
+Tagline
+color: #666666
+font family: Inter
+size: 18px
+
+Hero Section image 
+image size : 507px X 408px
+
+Menu Section
+title 
+color : #f05252
+font family: Inter 
+weight: 700
+
+popular categories
+Font fmaily: Inter 
+size: 36px
+weight: 700
+
+card item
+Title
+font: Inter 
+size: 20px
+weight: 700
+
+Count
+color: #666666
+font: Inter
+
+Special Dishes
+title 
+color : #f05252
+font family: Inter 
+weight: 700
+
+Best Dishes from Our Menu
+Font fmaily: Inter 
+size: 36px
+weight: 700
+
+left and right arrow
+size: 24px
+color: #ffffff
+background color: #39db4a
+font: ui-sans-serif
+
+card item 
+heart 
+size: 28px
+color: #39db4a
+
+card title 
+font: Inter
+size: 20px 
+weight: 700
+
+desc
+color: #737373
+
+Rating
+font: Inter
+font-size: 18px
+font-weight: 500
+
+Price: 
+font-family: Inter
+font-size: 20px
+font-weight: 700
+
+ksh
+color: #f05252
+size: 20px
+weight: 700
+
+Testimonial
+img size: 507 X 521
+
+title
+color : #f05252
+font family: Inter 
+weight: 700
+
+What customers say
+font: Inter
+size: 36px
+weight: 700
+
+description para
+color: #737373
+family: Inter
+weight: 500
+
+customer feedback
+font-family: Inter
+font-size: 18px
+
+4.9 and 18k Reviews 
+color: #737373
+
+Our story
+color: #f05252
+font-family: Inter
+font-weight: 700
+
+Our culinary Journey
+font-family: Inter
+font-size: 36px
+font-weight: 700
+
+description para
+color: #737373
+font-family: Inter
+font-size: 18px
+font-weight: 500
+
+card title 
+color: #39db4a
+font-family: Inter
+font-size: 18px
+font-weight: 700
+
+card desc 
+color: #90BD95
+font-family: Inter
+font-size: 14px
+font-weight: 500
+
+footer
+site desc 
+color: #737373
+font-family: Inter
+font-size: 18px
+font-weight: 500
+
+menu items 
+color: #525252
+font-family: Inter
+font-size:18px
+
+Menu Title (Useful link, Main menu, Contact us)
+font-family: Inter
+font-size: 20px
+font-weight: 700

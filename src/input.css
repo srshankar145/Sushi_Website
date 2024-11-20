@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .clip-quarter-moon {
+    clip-path: circle(50% at 100% 50%);
+  }
+}
